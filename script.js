@@ -1,9 +1,9 @@
 //your JS code here. If required.
-let a = document.createElement("h1");
-let container = document.getElementById("sizeInfo");
-container.appendChild(a);
+let a = document.getElementsByTagName("h1");
+console.log(a[0]);
 function updateSize(){
-    a.innerText="width: "+`${window.outerWidth}`+" and Height: "+`${window.outerWidth}`;
+    a[0].innerText="width: "+`${window.outerWidth}`+" and Height: "+`${window.outerWidth}`;
 }
 window.addEventListener('resize',updateSize);
+
 
